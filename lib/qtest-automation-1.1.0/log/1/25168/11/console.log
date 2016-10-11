@@ -1,0 +1,21 @@
+12:58:16.097 [qTest Automation] Job started: 2016-04-22 12:58:16
+
+12:58:16.097 [qTest Automation] Start to prepare 11 on 6F550324-C33D-4E11-93B8-C6F0CB48842F [C:\watir_cucumber_template-master\lib\qtest-automation-1.1.0]
+12:58:16.107 [qTest Automation] Clean log directory "C:\watir_cucumber_template-master\lib\qtest-automation-1.1.0\log\1\25168\11" since plan is configured to clean log directory
+12:58:16.107 [qTest Automation] Start to test 11 on 6F550324-C33D-4E11-93B8-C6F0CB48842F [C:\watir_cucumber_template-master\lib\qtest-automation-1.1.0]
+12:58:16.107 Current job status: passed.
+
+12:58:16.107 Start to execute task: Native Command.
+12:58:16.107 [qTest Automation] setting environment variable 'cucumber.options' with value '--plugin com.qasymphony.qtest.automation.plugin.cucumber.core.LogCollector'
+12:58:16.107 [qTest Automation] setting environment variable 'HOST_GUID' with value '6F550324-C33D-4E11-93B8-C6F0CB48842F'
+12:58:16.107 [qTest Automation] setting environment variable 'AGENT_SERVER_ID' with value '296'
+12:58:16.107 [qTest Automation] setting environment variable 'JOB_SERVER_ID' with value '3368'
+12:58:16.107 [qTest Automation] setting environment variable 'AGENT_SERVER_URL' with value 'http://localhost:6789/'
+12:58:16.117 [qTest Automation] setting environment variable 'LOG_PATH' with value 'C:\watir_cucumber_template-master\lib\qtest-automation-1.1.0\log\1\25168\11\1461344296107'
+12:58:16.117 [qTest Automation] setting environment variable 'PROJECT_ID' with value '25168'
+12:58:16.117 [qTest Automation] setting environment variable 'JOB_INSTANCE_ID' with value '11'
+12:58:16.781 Error: Could not find or load main class C:\watir_cucumber_template-master\lib
+12:58:16.801 [qTest Automation] Job completing with status [FAILED] 11 on 6F550324-C33D-4E11-93B8-C6F0CB48842F [C:\watir_cucumber_template-master\lib\qtest-automation-1.1.0]
+12:58:16.802 [qTest Automation] Current job status: failed 
+
+12:58:16.802 [qTest Automation] Job completed 11 on 6F550324-C33D-4E11-93B8-C6F0CB48842F [C:\watir_cucumber_template-master\lib\qtest-automation-1.1.0]

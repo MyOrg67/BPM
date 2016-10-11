@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>features/step_definitions/servicing_interaction.rb</title>
+    <link href="./assets/0.2.3/screen.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="./assets/0.2.3/print.css" media="print" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <script type="text/javascript" src="./assets/0.2.3/rcov.js"></script>
+  </head>
+  <body>
+    <h1>Watir cucumber template-master C0 Coverage Information - Simploco - RCov</h1>
+    <h2>features/step_definitions/servicing_interaction.rb</h2>
+
+    <div class="report_table_wrapper">
+      <table class='report' id='report_table'>
+        <thead>
+          <tr>
+            <th class="left_align">Name</th>
+            <th class="right_align">Total Lines</th>
+            <th class="right_align">Lines of Code</th>
+            <th class="left_align">Total Coverage</th>
+            <th class="left_align">Code Coverage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="left_align"><a href="features-step_definitions-servicing_interaction_rb.html">features/step_definitions/servicing_interaction.rb</a></td>
+            <td class='right_align'><tt>84</tt></td>
+            <td class='right_align'><tt>75</tt></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>15.48%</tt></div>
+      <div class="percent_graph">
+        <div class="covered" style="width:15px"></div>
+        <div class="uncovered" style="width:85px"></div>
+      </div></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>5.33%</tt></div>
+      <div class="percent_graph">
+        <div class="covered" style="width:5px"></div>
+        <div class="uncovered" style="width:95px"></div>
+      </div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Key</h3>
+
+    <div class="key"><pre><span class='marked'>Code reported as executed by Ruby looks like this...</span><span class='marked1'>and this: this line is also marked as covered.</span><span class='inferred'>Lines considered as run by rcov, but not reported by Ruby, look like this,</span><span class='inferred1'>and this: these lines were inferred by rcov (using simple heuristics).</span><span class='uncovered'>Finally, here's a line marked as not executed.</span></pre></div>
+
+    <h3>Coverage Details</h3>
+
+    <table class="details">
+      <tbody>
+        <tr class="marked">
+          <td><pre><a name="line2">2</a> Given(/^You are in the Servicing page$/) do</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line3">3</a>   visit AutomationHomePage</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line4">4</a>   on(LoginPage).login_yml</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line5">5</a>   on(LandingPage).menus.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line6">6</a>   sleep(1)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line7">7</a>   on(LandingPage).servicing.when_present(10).click</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line8">8</a> end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line9">9</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line10">10</a> And (/^I see the MERStab$/) do</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line11">11</a>   sleep(5)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line12">12</a>   expect(on(ServicingPage).MERS.present?).to be_truthy</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line13">13</a> end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line14">14</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line15">15</a> When(/^I click on MERStab$/) do</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line16">16</a>   on(ServicingPage).MERS.when_present(10).click</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line17">17</a> end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line18">18</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line19">19</a> Then(/^I get MERStab results/) do</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line20">20</a>   sleep(3)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line21">21</a>     on(ServicingPage).dataImports.when_present(10).hover</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line22">22</a>       on(ServicingPage).MERSMonthlyData.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line23">23</a>   on(ServicingPage).MERS.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line24">24</a>     on(ServicingPage).dataImports.when_present(10).hover</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line25">25</a>       on(ServicingPage).DMIMonthlyData.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line26">26</a>   on(ServicingPage).MERS.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line27">27</a>     on(ServicingPage).dataImports.when_present(10).hover</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line28">28</a>       on(ServicingPage).acquiredLoansSource.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line29">29</a>   on(ServicingPage).MERS.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line30">30</a>     on(ServicingPage).dataImports.when_present(10).hover</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line31">31</a>       on(ServicingPage).DMIXrefImports.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line32">32</a>   on(ServicingPage).MERS.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line33">33</a>     on(ServicingPage).reconciliation.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line34">34</a>   on(ServicingPage).MERS.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line35">35</a>     on(ServicingPage).biennialReviews.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line36">36</a>   on(ServicingPage).MERS.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line37">37</a>     on(ServicingPage).MERSOrganizations.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line38">38</a>   on(ServicingPage).MERS.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line39">39</a>     on(ServicingPage).exceptionList.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line40">40</a>   on(ServicingPage).TSS.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line41">41</a>     on(ServicingPage).sellersHover.when_present(10).hover</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line42">42</a>       on(ServicingPage).contracts.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line43">43</a>   on(ServicingPage).TSS.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line44">44</a>     on(ServicingPage).sellersHover.when_present(10).hover</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line45">45</a>   sleep(1)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line46">46</a>       on(ServicingPage).sellersTab.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line47">47</a>   on(ServicingPage).TSS.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line48">48</a>     on(ServicingPage).products.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line49">49</a>   on(ServicingPage).TSS.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line50">50</a>     on(ServicingPage).boarding.when_present(10).hover</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line51">51</a>       on(ServicingPage).selectLoans.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line52">52</a>   on(ServicingPage).TSS.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line53">53</a>     on(ServicingPage).boarding.when_present(10).hover</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line54">54</a>       on(ServicingPage).generateBoardingFile.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line55">55</a>   on(ServicingPage).TSS.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line56">56</a>     on(ServicingPage).reports.when_present(10).hover</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line57">57</a>       on(ServicingPage).accountingReports.when_present(10).hover</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line58">58</a>         on(ServicingPage).purchaseAdviceReports.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line59">59</a>   on(ServicingPage).TSS.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line60">60</a>     on(ServicingPage).reports.when_present(10).hover</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line61">61</a>       on(ServicingPage).accountingReports.when_present(10).hover</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line62">62</a>         on(ServicingPage).purchaseAdviceReconciliationReports.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line63">63</a>   on(ServicingPage).TSS.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line64">64</a>     on(ServicingPage).reports.when_present(10).hover</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line65">65</a>       on(ServicingPage).secondaryReports.when_present(10).hover</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line66">66</a>        on(ServicingPage).boardingReports.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line67">67</a>   on(ServicingPage).TSS.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line68">68</a>     on(ServicingPage).reports.when_present(10).hover</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line69">69</a>       on(ServicingPage).secondaryReports.when_present(10).hover</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line70">70</a>         on(ServicingPage).unfulfilledContracts.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line71">71</a>   on(ServicingPage).TSS.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line72">72</a>     on(ServicingPage).imports.when_present(10).hover</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line73">73</a>       on(ServicingPage).blitz.when_present(10).hover</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line74">74</a>         on(ServicingPage).loanFileUploaded.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line75">75</a>   on(ServicingPage).TSS.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line76">76</a>     on(ServicingPage).imports.when_present(10).hover</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line77">77</a>       on(ServicingPage).escrowsReceived.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line78">78</a>   on(ServicingPage).Fiserv.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line79">79</a>     on(ServicingPage).LOIFiles.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line80">80</a>   on(ServicingPage).Fiserv.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line81">81</a>     on(ServicingPage).manualBoarding.when_present(10).click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line82">82</a>   sleep(3)</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line83">83</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line84">84</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line85">85</a> end</pre></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Generated on 2016-10-10 10:14:30 -0400 with <a href="https://github.com/fguillen/simplecov-rcov">SimpleCov-RCov 0.2.3</a></p>
+
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="1" errors="0" skipped="0" tests="1" time="32.938294" name="Interacting with the element within the Pre Closing Page">
+<testcase classname="Interacting with the element within the Pre Closing Page" name="Storing interaction steps within the Pre Closing Page" time="32.938294">
+  <failure message="failed Storing interaction steps within the Pre Closing Page" type="failed">
+    <![CDATA[Scenario: Storing interaction steps within the Pre Closing Page
+
+Given You are in the PreClosing page
+
+Message:
+]]>
+    <![CDATA[timed out after 10 seconds, waiting for {:text=>"Menus"} to become present (Watir::Wait::TimeoutError)
+./features/step_definitions/preClosing_interactions.rb:4:in `/^You are in the PreClosing page$/'
+features/PreClosing.feature:3:in `Given You are in the PreClosing page']]>
+  </failure>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+</testsuite>

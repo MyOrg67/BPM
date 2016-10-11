@@ -1,0 +1,21 @@
+16:11:14.330 [qTest Automation] Job started: 2016-04-19 16:11:14
+
+16:11:14.330 [qTest Automation] Start to prepare 3 on 6F550324-C33D-4E11-93B8-C6F0CB48842F [C:\watir_cucumber_template-master\lib\qtest-automation-1.1.0]
+16:11:14.332 [qTest Automation] Clean log directory "C:\watir_cucumber_template-master\lib\qtest-automation-1.1.0\log\2\25168\3" since plan is configured to clean log directory
+16:11:14.333 [qTest Automation] Start to test 3 on 6F550324-C33D-4E11-93B8-C6F0CB48842F [C:\watir_cucumber_template-master\lib\qtest-automation-1.1.0]
+16:11:14.333 Current job status: passed.
+
+16:11:14.334 Start to execute task: Native Command.
+16:11:14.335 [qTest Automation] setting environment variable 'cucumber.options' with value '--plugin com.qasymphony.qtest.automation.plugin.cucumber.core.LogCollector'
+16:11:14.336 [qTest Automation] setting environment variable 'HOST_GUID' with value '6F550324-C33D-4E11-93B8-C6F0CB48842F'
+16:11:14.336 [qTest Automation] setting environment variable 'AGENT_SERVER_ID' with value '298'
+16:11:14.337 [qTest Automation] setting environment variable 'JOB_SERVER_ID' with value '3305'
+16:11:14.337 [qTest Automation] setting environment variable 'AGENT_SERVER_URL' with value 'http://localhost:6789/'
+16:11:14.338 [qTest Automation] setting environment variable 'LOG_PATH' with value 'C:\watir_cucumber_template-master\lib\qtest-automation-1.1.0\log\2\25168\3\1461096674333'
+16:11:14.338 [qTest Automation] setting environment variable 'PROJECT_ID' with value '25168'
+16:11:14.339 [qTest Automation] setting environment variable 'JOB_INSTANCE_ID' with value '3'
+16:11:14.449 ruby: invalid option -t  (-h will show valid options) (RuntimeError)
+16:11:14.457 [qTest Automation] Job completing with status [FAILED] 3 on 6F550324-C33D-4E11-93B8-C6F0CB48842F [C:\watir_cucumber_template-master\lib\qtest-automation-1.1.0]
+16:11:14.460 [qTest Automation] Current job status: failed 
+
+16:11:14.461 [qTest Automation] Job completed 3 on 6F550324-C33D-4E11-93B8-C6F0CB48842F [C:\watir_cucumber_template-master\lib\qtest-automation-1.1.0]

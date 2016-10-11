@@ -1,0 +1,8 @@
+2016-04-18 14:29:34,581  INFO [Thread-25] TestNgPlugin:? - [TestNG Plugin] Loading plugin ...
+2016-04-18 14:29:34,591  INFO [Thread-25] TestNgPlugin:? - [TestNG Plugin] Loaded.
+2016-04-18 14:29:34,601  INFO [Thread-25] TestNgPlugin:? - [TestNG Plugin] handle get plugin configuration request.
+2016-04-18 14:29:34,622  INFO [Thread-25] TestNgPlugin:? - [TestNG Plugin] handle get plugin configuration request.
+2016-04-22 12:57:45,393  INFO [Thread-25] TestNgPlugin:? - [TestNG Plugin] Loading plugin ...
+2016-04-22 12:57:45,413  INFO [Thread-25] TestNgPlugin:? - [TestNG Plugin] Loaded.
+2016-04-22 12:57:45,413  INFO [Thread-25] TestNgPlugin:? - [TestNG Plugin] handle get plugin configuration request.
+2016-04-22 12:57:45,453  INFO [Thread-25] TestNgPlugin:? - [TestNG Plugin] handle get plugin configuration request.

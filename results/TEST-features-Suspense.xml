@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="1" errors="0" skipped="0" tests="1" time="42.081948" name="Interacting with the element within the Suspense Page">
+<testcase classname="Interacting with the element within the Suspense Page" name="Storing interaction steps within the Suspense Page" time="42.081948">
+  <failure message="failed Storing interaction steps within the Suspense Page" type="failed">
+    <![CDATA[Scenario: Storing interaction steps within the Suspense Page
+
+Given You are in the Suspense page
+
+Message:
+]]>
+    <![CDATA[timed out after 10 seconds, waiting for {:text=>"Menus"} to become present (Watir::Wait::TimeoutError)
+./features/step_definitions/suspense_interaction.rb:4:in `/^You are in the Suspense page$/'
+features/Suspense.feature:3:in `Given You are in the Suspense page']]>
+  </failure>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+</testsuite>

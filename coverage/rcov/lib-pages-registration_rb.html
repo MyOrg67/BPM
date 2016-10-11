@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>lib/pages/registration.rb</title>
+    <link href="./assets/0.2.3/screen.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="./assets/0.2.3/print.css" media="print" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <script type="text/javascript" src="./assets/0.2.3/rcov.js"></script>
+  </head>
+  <body>
+    <h1>Watir cucumber template-master C0 Coverage Information - Simploco - RCov</h1>
+    <h2>lib/pages/registration.rb</h2>
+
+    <div class="report_table_wrapper">
+      <table class='report' id='report_table'>
+        <thead>
+          <tr>
+            <th class="left_align">Name</th>
+            <th class="right_align">Total Lines</th>
+            <th class="right_align">Lines of Code</th>
+            <th class="left_align">Total Coverage</th>
+            <th class="left_align">Code Coverage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="left_align"><a href="lib-pages-registration_rb.html">lib/pages/registration.rb</a></td>
+            <td class='right_align'><tt>21</tt></td>
+            <td class='right_align'><tt>15</tt></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+      <div class="percent_graph">
+        <div class="covered" style="width:100px"></div>
+        <div class="uncovered" style="width:0px"></div>
+      </div></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+      <div class="percent_graph">
+        <div class="covered" style="width:100px"></div>
+        <div class="uncovered" style="width:0px"></div>
+      </div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Key</h3>
+
+    <div class="key"><pre><span class='marked'>Code reported as executed by Ruby looks like this...</span><span class='marked1'>and this: this line is also marked as covered.</span><span class='inferred'>Lines considered as run by rcov, but not reported by Ruby, look like this,</span><span class='inferred1'>and this: these lines were inferred by rcov (using simple heuristics).</span><span class='uncovered'>Finally, here's a line marked as not executed.</span></pre></div>
+
+    <h3>Coverage Details</h3>
+
+    <table class="details">
+      <tbody>
+        <tr class="marked">
+          <td><pre><a name="line2">2</a> class RegistrationPage &lt; GenericBasePage</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line3">3</a>   include DataHelper</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line4">4</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line5">5</a>   #class HeaderPage &lt; GenericBasePage</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line6">6</a>   element(:registrationValidation) {|b| b.link(xpath: &quot;//li[@id=&#39;registration_registration_validation_registration_validations_path&#39;]/a&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line7">7</a>   element(:forcedRegistrations) {|b| b.link(xpath: &quot;//li[@id=&#39;registration_forced_registrations_registration_forced_registrations_path&#39;]/a&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line8">8</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line9">9</a>   element(:reports) {|b| b.link(xpath: &quot;//li[@id=&#39;registration_reports_#&#39;]/a&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line10">10</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line11">11</a>     #Selections within Registration drop down menu</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line12">12</a>     element(:FCRADaily) {|b| b.link(xpath: &quot;//li[@id=&#39;registration_forced_registrations_registration_forced_registrations_path&#39;]/a&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line13">13</a>     element(:dailyValidationPASSFAILReport) {|b| b.link(xpath: &quot;//li[@id=&#39;reports_daily_validation_pass/fail_report_daily_validation_pass_fail_report_path&#39;]/a&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line14">14</a>     element(:monthlyValidationPASSFAILReport) {|b| b.link(xpath: &quot;//li[@id=&#39;reports_monthly_validation_pass/fail_report_monthly_validation_pass_fail_report_path&#39;]/a&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line15">15</a>     element(:dailyValidationReport) {|b| b.link(xpath: &quot;//li[@id=&#39;reports_daily_validation_report_daily_validation_report_path&#39;]/a&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line16">16</a>     element(:monthlyValidationReport) {|b| b.link(xpath: &quot;//li[@id=&#39;reports_monthly_validation_report_monthly_validation_report_path&#39;]/a&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line17">17</a>     element(:dailySystemValidatedReport) {|b| b.link(xpath: &quot;//li[@id=&#39;reports_daily_system_validated_report_system_validated_report_path&#39;]/a&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line18">18</a>     element(:dailyLoansNotValidated) {|b| b.link(xpath: &quot;//li[@id=&#39;reports_daily_loans_not_validated_daily_loans_not_validated_path&#39;]/a&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line19">19</a>     element(:monthlyLoansNotValidated) {|b| b.link(xpath: &quot;//li[@id=&#39;reports_monthly_loans_not_validated_monthly_loans_not_validated_path&#39;]/a&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line20">20</a>     element(:loanValidationHistory) {|b| b.link(xpath: &quot;//li[@id=&#39;reports_loan_validation_history_loan_validation_history_path&#39;]/a&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line21">21</a>     element(:EConsentOnCancelledDeniedWithdrawnLoans) {|b| b.link(xpath: &quot;//li[@id=&#39;reports_econsent_on_cancelled,_denied,_or_withdrawn_loans_registration_esign_consent_index_path&#39;]/a&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line22">22</a> end</pre></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Generated on 2016-10-10 10:14:30 -0400 with <a href="https://github.com/fguillen/simplecov-rcov">SimpleCov-RCov 0.2.3</a></p>
+
+  </body>
+</html>

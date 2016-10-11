@@ -1,0 +1,206 @@
+#!/bin/bash
+
+# chkconfig: 345 90 10
+# description: qTest Automation Agent
+# processname: qtest-automation
+### BEGIN INIT INFO
+# Provides: qtest-automation
+# Required-Start: $network $remote_fs
+# Required-Stop: $network $remote_fs
+# Default-Start: 2 3 4 5
+# Default-Stop: 0 1 6
+# Description: Start and Stop the qAutomation Server
+### END INIT INFO
+
+PRGDIR="/usr/share/qtest-automation"
+PID_FILE="/var/run/qtest-automation/agent-server.pid"
+#CUR_USER=`/usr/bin/whoami`
+CUR_USER="qas"
+
+RETVAL=$?
+
+# show success message.
+log_success_msg() {
+  echo $1
+}
+
+# show failure message
+log_failure_msg() {
+  echo $1
+}
+
+# lookup the program directory.
+setup_dir() {
+  PRG="$0"
+
+  while [ -h "$PRG" ]; do
+    ls=`ls -ld "$PRG"`
+    link=`expr "$ls" : '.* -> \(.*\)$'`
+    if expr "$link" : '/.*' > /dev/null; then
+      PRG="$link"
+    else
+      PRG=`dirname "$PRG"/"$link"`
+    fi
+  done
+
+  PRGDIR=`dirname "$PRG"`
+  PRGDIR=`cd "$PRGDIR" ; pwd -P`
+}
+
+# check the instance is running
+is_running() {
+  # returns 0 if the process is running
+  # returns 1 if the process is not running, or file was removed.
+  # returns 2 if the process state is unknown.
+  if [ -f "$PID_FILE" ]; then
+    PID=`cat "$PID_FILE"`
+    if [ -z $PID ]; then
+      return 2
+    fi
+
+    LINE=`ps -p $PID`
+    PIDRET=$?
+
+    if [ $PIDRET -eq 0 ]; then
+      export PID
+      return 0
+    fi
+    rm -f "$PID_FILE"
+  fi
+
+  return 1
+}
+
+# stop qTest Automation Agent
+instance_stop() {
+  if [ -x "$PRGDIR/stop-server.sh" ]; then
+    echo "Stopping qTest Automation Agent."
+
+    is_running
+    RUNNING=$?
+    if [ $RUNNING -eq 0 ]; then
+      log_success_msg "Instance is running as PID=$PID, shutting down..."
+
+      if [ "$CUR_USER" != "root" ] && [ "$CUR_USER" != "qas" ]; then
+        log_failure_msg "You do not have permission to stop the qTest Automation Agent."
+        RETVAL=254
+      else
+        if [ "$CUR_USER" = "root" ]; then
+          eval $PRGDIR/stop-server.sh
+        else
+          su - qas -c $PRGDIR/stop-server.sh
+        fi
+        RETVAL=$?
+      fi
+
+      # sleep 5 second.
+      sleep 2
+
+      CAN_DELETE_PID=1
+      is_running
+      if [ $? -eq 0 ]; then
+        echo "Instance is still running as PID=$PID, forcing a shutdown"
+        kill -9 $PID
+        CAN_DELETE_PID=$?
+      else
+        echo "Instance shutdown gracefully"
+        CAN_DELETE_PID=0
+      fi
+
+      if [ $CAN_DELETE_PID -eq 0 ]; then
+        if [ -f "$PID_FILE" ]; then
+          rm -fr "$PID_FILE"
+        fi
+      else
+        log_failure_msg "Unable to stop process PID=$PID."
+        RETVAL=1
+      fi
+    elif [ $RUNNING -eq 2 ]; then
+      log_success_msg "No action taken. Unable to stop qTest Automation Agent that was started as a foreground process. Use CTRL+C in the console of the process to stop the instance."
+      RETVAL=2
+    else
+      log_success_msg "Instance is not running. No action taken"
+      RETVAL=0
+    fi
+  else
+    log_failure_msg "Stop script $PRGDIR/stop-server.sh doesn't exist or is not executable."
+    RETVAL=255
+  fi
+}
+
+# start qTest Automation Agent instance.
+instance_start() {
+  if [ -x "$PRGDIR/start-server.sh" ]; then
+    echo "Starting qTest Automation Agent."
+
+    is_running
+    RUNNING=$?
+
+    if [ $RUNNING -eq 0 ]; then
+      echo "ERROR: Instance already running as PID=$PID"
+      RETVAL=1
+    else
+      if [ "$CUR_USER" != "root" ] && [ "$CUR_USER" != "qas" ]; then
+        log_failure_msg "You do not have permission to start the qTest Automation Agent."
+        RETVAL=254
+      else
+        if [ "$CUR_USER" = "root" ]; then
+          eval $PRGDIR/start-server.sh
+        else
+          su - qas -c $PRGDIR/start-server.sh
+        fi
+
+        RETVAL=$?
+
+        sleep 2
+        is_running
+        if [ $? -eq 0 ] ; then
+          echo "Status:                     RUNNING as PID=$PID"
+        else
+          echo "Status:                     NOT RUNNING"
+        fi
+      fi
+    fi
+  else
+    log_failure_msg "Startup script $PRGDIR/start-server.sh doesn't exist or is not executable."
+    RETVAL=255
+  fi
+}
+
+# show instance status
+instance_status() {
+  is_running
+  if [ $? -eq 0 ]; then
+    echo "Status:                        RUNNING as PID=$PID"
+  else
+    echo "Status:                        NOT RUNNING"
+  fi
+  RETVAL=0
+}
+
+# main program.
+if [ -z "$PRGDIR" ] ; then
+  setup_dir
+fi
+
+case "$1" in
+  start)
+    instance_start
+    ;;
+  stop)
+    instance_stop
+    ;;
+  restart)
+    instance_stop
+    instance_start
+    ;;
+  status)
+    instance_status
+    ;;
+  *)
+    echo "Usage: $0 {start|stop|restart|status}"
+    exit 1
+    ;;
+esac
+
+exit $RETVAL

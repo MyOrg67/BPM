@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>lib/pages/mortgagebot_1003.rb</title>
+    <link href="./assets/0.2.3/screen.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="./assets/0.2.3/print.css" media="print" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <script type="text/javascript" src="./assets/0.2.3/rcov.js"></script>
+  </head>
+  <body>
+    <h1>Watir cucumber template-master C0 Coverage Information - Simploco - RCov</h1>
+    <h2>lib/pages/mortgagebot_1003.rb</h2>
+
+    <div class="report_table_wrapper">
+      <table class='report' id='report_table'>
+        <thead>
+          <tr>
+            <th class="left_align">Name</th>
+            <th class="right_align">Total Lines</th>
+            <th class="right_align">Lines of Code</th>
+            <th class="left_align">Total Coverage</th>
+            <th class="left_align">Code Coverage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="left_align"><a href="lib-pages-mortgagebot_1003_rb.html">lib/pages/mortgagebot_1003.rb</a></td>
+            <td class='right_align'><tt>70</tt></td>
+            <td class='right_align'><tt>50</tt></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+      <div class="percent_graph">
+        <div class="covered" style="width:100px"></div>
+        <div class="uncovered" style="width:0px"></div>
+      </div></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+      <div class="percent_graph">
+        <div class="covered" style="width:100px"></div>
+        <div class="uncovered" style="width:0px"></div>
+      </div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Key</h3>
+
+    <div class="key"><pre><span class='marked'>Code reported as executed by Ruby looks like this...</span><span class='marked1'>and this: this line is also marked as covered.</span><span class='inferred'>Lines considered as run by rcov, but not reported by Ruby, look like this,</span><span class='inferred1'>and this: these lines were inferred by rcov (using simple heuristics).</span><span class='uncovered'>Finally, here's a line marked as not executed.</span></pre></div>
+
+    <h3>Coverage Details</h3>
+
+    <table class="details">
+      <tbody>
+        <tr class="marked">
+          <td><pre><a name="line2">2</a> class Mortgagebot1003Page &lt; GenericBasePage</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line3">3</a>   include DataHelper</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line4">4</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line5">5</a>   #Section Two - Property</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line6">6</a>   element(:IIProperty) {|b| b.element(xpath: &quot;/html/body/table[1]/tbody/tr[1]/td[5]&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line7">7</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line8">8</a>   element(:addressNumber) {|b| b.text_field(name: &quot;addrHouseNo_ii&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line9">9</a>   element(:addressStreetName) {|b| b.text_field(name: &quot;addrStreetName_ii&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line10">10</a>   element(:city) {|b| b.text_field(name: &quot;subjPropCity_ii&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line11">11</a>   element(:state) {|b| b.element(xpath: &quot;/html/body/table[2]/tbody/tr/td[2]/table[2]/tbody/tr[7]/td[2]/select&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line12">12</a>   element(:stateActual) {|b| b.element(xpath: &quot;/html/body/table[2]/tbody/tr/td[2]/table[2]/tbody/tr[7]/td[2]/select/option[23]&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line13">13</a>   element(:zipCode) {|b| b.text_field(name: &quot;wholezip_ii&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line14">14</a>   element(:county) {|b| b.element(xpath: &quot;/html/body/table[2]/tbody/tr/td[2]/table[2]/tbody/tr[7]/td[3]/span/select/option[1]&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line15">15</a>   element(:countyActual) {|b| b.element(xpath: &quot;/html/body/table[2]/tbody/tr/td[2]/table[2]/tbody/tr[7]/td[3]/span/select/option[84]&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line16">16</a>   element(:numberOfUnits) {|b| b.element(xpath: &quot;/html/body/table[2]/tbody/tr/td[2]/table[2]/tbody/tr[13]/td[1]/select&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line17">17</a>   element(:numberOfUnitsActual) {|b| b.element(xpath: &quot;/html/body/table[2]/tbody/tr/td[2]/table[2]/tbody/tr[13]/td[1]/select/option[2]&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line18">18</a>   element(:mannerInWhichTitleHeld) {|b| b.text_field(name: &quot;manner_ii&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line19">19</a>   element(:estateHeldIn) {|b| b.element(xpath: &quot;/html/body/table[2]/tbody/tr/td[2]/table[5]/tbody/tr[6]/td[2]/select&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line20">20</a>   element(:estateHeldInActual) {|b| b.element(xpath: &quot;/html/body/table[2]/tbody/tr/td[2]/table[5]/tbody/tr[6]/td[2]/select/option[2]&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line21">21</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line22">22</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line23">23</a>   #Section Three - Borrower</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line24">24</a>   element(:IIIBorrower) {|b| b.element(xpath: &quot;/html/body/table[1]/tbody/tr[1]/td[8]/a/span&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line25">25</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line26">26</a>   element(:email) {|b| b.text_field(name: &quot;email_iii1&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line27">27</a>   element(:maritalStatus) {|b| b.element(xpath: &quot;/html/body/table[2]/tbody/tr/td[2]/table[2]/tbody/tr[9]/td[1]/select&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line28">28</a>   element(:maritalStatusActual) {|b| b.element(xpath: &quot;/html/body/table[2]/tbody/tr/td[2]/table[2]/tbody/tr[9]/td[1]/select/option[4]&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line29">29</a>   element(:years) {|b| b.text_field(name: &quot;noYrs_iii1&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line30">30</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line31">31</a>   #Section Five - Income Housing</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line32">32</a>   element(:baseIncome) {|b| b.text_field(name: &quot;baseInc_v1&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line33">33</a>   element(:saveCloseThree) {|b| b.text_field(xpath: &quot;/html/body/table[2]/tbody/tr/td[2]/table[5]/tbody/tr/td[2]/a[1]/img&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line34">34</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line35">35</a>   #Simulate a carriage return after clicking Save to close pop-up</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line36">36</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line37">37</a>   #Section VIII - Declarations</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line38">38</a>   element(:judgements) {|b| b.button(xpath: &quot;/html/body/table[2]/tbody/tr/td[2]/table[2]/tbody/tr[2]/td[2]/input[2]&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line39">39</a>   element(:bankruptcy) {|b| b.button(xpath: &quot;/html/body/table[2]/tbody/tr/td[2]/table[2]/tbody/tr[3]/td[2]/input[2]&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line40">40</a>   element(:foreclosed) {|b| b.button(xpath: &quot;/html/body/table[2]/tbody/tr/td[2]/table[2]/tbody/tr[4]/td[2]/input[2]&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line41">41</a>   element(:lawsuit) {|b| b.button(xpath: &quot;/html/body/table[2]/tbody/tr/td[2]/table[2]/tbody/tr[5]/td[2]/input[2]&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line42">42</a>   element(:obligated) {|b| b.button(xpath: &quot;/html/body/table[2]/tbody/tr/td[2]/table[2]/tbody/tr[6]/td[2]/input[2]&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line43">43</a>   element(:delinquent) {|b| b.button(xpath: &quot;/html/body/table[2]/tbody/tr/td[2]/table[2]/tbody/tr[7]/td[2]/input[2]&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line44">44</a>   element(:alimonySupport) {|b| b.button(xpath: &quot;/html/body/table[2]/tbody/tr/td[2]/table[2]/tbody/tr[8]/td[2]/input[2]&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line45">45</a>   element(:borrowed) {|b| b.button(xpath: &quot;/html/body/table[2]/tbody/tr/td[2]/table[2]/tbody/tr[9]/td[2]/input[2]&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line46">46</a>   element(:endorser) {|b| b.button(xpath: &quot;/html/body/table[2]/tbody/tr/td[2]/table[2]/tbody/tr[10]/td[2]/input[2]&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line47">47</a>   element(:citizen) {|b| b.button(xpath: &quot;/html/body/table[2]/tbody/tr/td[2]/table[2]/tbody/tr[11]/td[2]/input[1]&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line48">48</a>   element(:resident) {|b| b.button(xpath: &quot;/html/body/table[2]/tbody/tr/td[2]/table[2]/tbody/tr[12]/td[2]/input[2]&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line49">49</a>   element(:primaryResidence) {|b| b.button(xpath: &quot;/html/body/table[2]/tbody/tr/td[2]/table[2]/tbody/tr[13]/td[2]/input[1]&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line50">50</a>   element(:ownership) {|b| b.button(xpath: &quot;/html/body/table[2]/tbody/tr/td[2]/table[2]/tbody/tr[14]/td[2]/input[2]&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line51">51</a>   element(:saveCloseFour) {|b| b.button(xpath: &quot;/html/body/table[2]/tbody/tr/td[2]/table[4]/tbody/tr/td[2]/a[1]/img&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line52">52</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line53">53</a>   #Section X - Government Monitoring</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line54">54</a>   element(:governmentMonitoring) {|b| b.element(xpath: &quot;/html/body/table/tbody/tr[2]/td[14]/a/span&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line55">55</a>   element(:ethnicity) {|b| b.element(xpsth: &quot;/html/body/form/table/tbody/tr/td[2]/table[2]/tbody/tr[3]/td[2]/select&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line56">56</a>   element(:ethnicityActual) {|b| b.element(xpath: &quot;/html/body/form/table/tbody/tr/td[2]/table[2]/tbody/tr[3]/td[2]/select/option[3]&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line57">57</a>   element(:gender) {|b| b.element(xpath: &quot;/html/body/form/table/tbody/tr/td[2]/table[2]/tbody/tr[3]/td[3]/select&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line58">58</a>   element(:genderActual) {|b| b.element(xpath: &quot;/html/body/form/table/tbody/tr/td[2]/table[2]/tbody/tr[3]/td[3]/select/option[2]&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line59">59</a>   element(:race) {|b| b.button(xpath: &quot;/html/body/form/table/tbody/tr/td[2]/table[2]/tbody/tr[5]/td/table/tbody/tr[1]/td[2]/input&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line60">60</a>   element(:applicationTakenBy) {|b| b.element(xpath: &quot;/html/body/form/table/tbody/tr/td[2]/table[3]/tbody/tr[3]/td[1]/select&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line61">61</a>   element(:applicationTakenByActual) {|b| b.element(xpath: &quot;/html/body/form/table/tbody/tr/td[2]/table[3]/tbody/tr[3]/td[1]/select/option[3]&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line62">62</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line63">63</a>   #Section Other Data</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line64">64</a>   element(:baseIncome) {|b| b.element(xpath: &quot;/html/body/table/tbody/tr[2]/td[17]/a/span&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line65">65</a>   element(:propertyStatus) {|b| b.element(xpath: &quot;/html/body/form/table/tbody/tr/td[2]/table[2]/tbody/tr[3]/td[2]/select&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line66">66</a>   element(:propertyStatusActual) {|b| b.element(xpath: &quot;/html/body/form/table/tbody/tr/td[2]/table[2]/tbody/tr[3]/td[2]/select/option[3]&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line67">67</a>   element(:baseIncome) {|b| b.button(name: &quot;willWaived_xi&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line68">68</a>   element(:saveCloseFive) {|b| b.element(xpath: &quot;/html/body/form/table/tbody/tr/td[2]/table[5]/tbody/tr/td[2]/a[1]/img&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line69">69</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line70">70</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line71">71</a> end</pre></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Generated on 2016-10-10 10:14:30 -0400 with <a href="https://github.com/fguillen/simplecov-rcov">SimpleCov-RCov 0.2.3</a></p>
+
+  </body>
+</html>

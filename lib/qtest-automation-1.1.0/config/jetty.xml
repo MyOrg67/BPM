@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "http://eclipse.org/jetty/configure.dtd">
+<Configure id="Server" class="org.eclipse.jetty.server.Server">
+
+  <!-- ==================================================================== -->
+  <!-- Server Thread Pool                                                   -->
+  <!-- ==================================================================== -->
+  <Get name="ThreadPool">
+    <Set name="minThreads">10</Set>
+    <Set name="maxThreads">200</Set>
+    <Set name="idleTimeout">60000</Set>
+    <Set name="detailedDump">false</Set>
+  </Get>
+
+</Configure>

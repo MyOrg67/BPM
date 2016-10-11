@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="1" errors="0" skipped="0" tests="1" time="132.272000" name="Interacting with the element within the Closing Page">
+<testcase classname="Interacting with the element within the Closing Page" name="Storing interaction steps within the Closing Page" time="132.272000">
+  <failure message="failed Storing interaction steps within the Closing Page" type="failed">
+    <![CDATA[Scenario: Storing interaction steps within the Closing Page
+
+Then I get Closing Reports drop down selections
+
+Message:
+]]>
+    <![CDATA[timed out after 10 seconds, waiting for {:text=>"Reports", :tag_name=>"a"} to become present (Watir::Wait::TimeoutError)
+./features/step_definitions/closing_interaction.rb:27:in `/^I get Closing Reports drop down selections/'
+features/Closing.feature:6:in `Then I get Closing Reports drop down selections']]>
+  </failure>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+</testsuite>

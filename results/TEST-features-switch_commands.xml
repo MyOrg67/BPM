@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="0" errors="0" skipped="0" tests="5" time="100.113011" name="Switch to window, pop up, frame, tab">
+<testcase classname="Switch to window, pop up, frame, tab" name="Switch to window" time="28.722872">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Switch to window, pop up, frame, tab" name="Switch to JavaScript Alert" time="14.960496">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Switch to window, pop up, frame, tab" name="Switch to browser tab" time="24.513452">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Switch to window, pop up, frame, tab" name="Switch to message window" time="15.504550">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Switch to window, pop up, frame, tab" name="Switch to frame" time="16.411641">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+</testsuite>

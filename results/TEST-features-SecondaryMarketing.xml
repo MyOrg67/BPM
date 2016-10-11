@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="1" errors="0" skipped="0" tests="1" time="44.532452" name="Interacting with the element within the Secondary Marketing Page">
+<testcase classname="Interacting with the element within the Secondary Marketing Page" name="Storing interaction steps within the Secondary Marketing Page" time="44.532452">
+  <failure message="failed Storing interaction steps within the Secondary Marketing Page" type="failed">
+    <![CDATA[Scenario: Storing interaction steps within the Secondary Marketing Page
+
+Given You are in the Secondary Marketing page
+
+Message:
+]]>
+    <![CDATA[No connection could be made because the target machine actively refused it. - connect(2) (Errno::ECONNREFUSED)
+./features/step_definitions/secondary_marketing.rb:4:in `/^You are in the Secondary Marketing page$/'
+features/SecondaryMarketing.feature:3:in `Given You are in the Secondary Marketing page']]>
+  </failure>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+</testsuite>

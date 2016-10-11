@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="1" errors="0" skipped="0" tests="1" time="37.356000" name="Interacting with the element within the Accounting Page">
+<testcase classname="Interacting with the element within the Accounting Page" name="Storing interaction steps within the Accounting Page" time="37.356000">
+  <failure message="failed Storing interaction steps within the Accounting Page" type="failed">
+    <![CDATA[Scenario: Storing interaction steps within the Accounting Page
+
+When I click on commissions
+
+Message:
+]]>
+    <![CDATA[timed out after 10 seconds, waiting for {:text=>"Commissions", :tag_name=>"a"} to become present (Watir::Wait::TimeoutError)
+./features/step_definitions/accounting_interaction.rb:26:in `/^I click on commissions$/'
+features/Accounting.feature:7:in `When I click on commissions']]>
+  </failure>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+</testsuite>

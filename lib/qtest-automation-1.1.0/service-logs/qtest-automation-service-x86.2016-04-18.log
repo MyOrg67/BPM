@@ -1,0 +1,22 @@
+[2016-04-18 14:27:31] [info]  [ 6180] Commons Daemon procrun (1.0.15.0 32-bit) started
+[2016-04-18 14:27:31] [info]  [ 6180] Service qtest-automation-service-x86 name qTest Automation Agent
+[2016-04-18 14:27:31] [error] [ 6180] The specified service already exists.
+[2016-04-18 14:27:31] [error] [ 6180] Failed installing 'qtest-automation-service-x86' service
+[2016-04-18 14:27:31] [error] [ 6180] The specified service already exists.
+[2016-04-18 14:27:31] [error] [ 6180] Commons Daemon procrun failed with exit value: 8 (Failed to install service)
+[2016-04-18 14:27:31] [error] [ 6180] The specified service already exists.
+[2016-04-18 14:30:38] [info]  [ 3784] Commons Daemon procrun (1.0.15.0 32-bit) started
+[2016-04-18 14:30:38] [info]  [ 3784] Stopping service 'qtest-automation-service-x86' ...
+[2016-04-18 14:30:39] [info]  [ 3784] Service 'qtest-automation-service-x86' stopped
+[2016-04-18 14:30:39] [info]  [ 3784] Stop service finished.
+[2016-04-18 14:30:39] [info]  [ 3784] Commons Daemon procrun finished
+[2016-04-18 14:30:45] [info]  [ 2792] Commons Daemon procrun (1.0.15.0 32-bit) started
+[2016-04-18 14:30:45] [info]  [ 2792] Starting service 'qtest-automation-service-x86' ...
+[2016-04-18 14:30:45] [info]  [ 6024] Commons Daemon procrun (1.0.15.0 32-bit) started
+[2016-04-18 14:30:45] [info]  [ 6024] Running 'qtest-automation-service-x86' Service...
+[2016-04-18 14:30:45] [info]  [ 2456] Starting service...
+[2016-04-18 14:30:47] [error] [ 2792] Failed to start 'qtest-automation-service-x86' service
+[2016-04-18 14:30:47] [error] [ 2792] The data area passed to a system call is too small.
+[2016-04-18 14:30:48] [info]  [ 2792] Start service finished.
+[2016-04-18 14:30:48] [error] [ 2792] Commons Daemon procrun failed with exit value: 5 (Failed to start service)
+[2016-04-18 14:30:48] [error] [ 2792] The data area passed to a system call is too small.

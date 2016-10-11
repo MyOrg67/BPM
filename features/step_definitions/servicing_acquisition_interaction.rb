@@ -1,0 +1,137 @@
+Given(/^You are in the Servicing Acquisition page$/) do
+  visit AutomationHomePage
+  on(LoginPage).login_yml
+  on(LandingPage).menus.when_present(10).click
+  sleep(1)
+  on(LandingPage).servicingAcquisition.when_present(10).click
+end
+
+And (/^I see the TSStab$/) do
+  sleep(5)
+  expect(on(ServicingAcquisitionPage).TSS.present?).to be_truthy
+end
+
+When(/^I click on TSStab$/) do
+  on(ServicingAcquisitionPage).TSS.when_present(10).click
+end
+
+Then(/^I get TSStab results$/) do
+  on(ServicingAcquisitionPage).dashboard.when_present(10).click
+  sleep(5)
+  on(ServicingAcquisitionPage).TSS.when_present(10).click
+  sleep(1)
+    on(ServicingAcquisitionPage).sellers4.when_present(10).hover
+      on(ServicingAcquisitionPage).contracts.when_present(10).click
+  sleep(3)
+  on(ServicingAcquisitionPage).TSS.when_present(10).click
+    on(ServicingAcquisitionPage).sellers4.when_present(10).hover
+      on(ServicingAcquisitionPage).sellers5.when_present(10).click
+  on(ServicingAcquisitionPage).TSS.when_present(10).click
+    on(ServicingAcquisitionPage).pricing.when_present(10).hover
+      on(ServicingAcquisitionPage).pricingGrid.when_present(10).click
+  on(ServicingAcquisitionPage).TSS.when_present(10).click
+    on(ServicingAcquisitionPage).pricing.when_present(10).hover
+      on(ServicingAcquisitionPage).indices.when_present(10).click
+  on(ServicingAcquisitionPage).TSS.when_present(10).click
+    on(ServicingAcquisitionPage).pricing.when_present(10).hover
+      on(ServicingAcquisitionPage).loanPrices.when_present(10).hover
+  on(ServicingAcquisitionPage).TSS.when_present(10).click
+  on(ServicingAcquisitionPage).TSS.when_present(10).click
+    on(ServicingAcquisitionPage).pricing.when_present(10).hover
+      on(ServicingAcquisitionPage).importPricingGrids.when_present(10).click
+  on(ServicingAcquisitionPage).TSS.when_present(10).click
+    on(ServicingAcquisitionPage).products.when_present(10).click
+  on(ServicingAcquisitionPage).TSS.when_present(10).click
+    on(ServicingAcquisitionPage).imports.when_present(10).hover
+      on(ServicingAcquisitionPage).cash.when_present(10).hover
+        on(ServicingAcquisitionPage).FNMAWholeLoanFiles.when_present(10).click
+  sleep(3)
+  on(ServicingAcquisitionPage).TSS.when_present(10).click
+    on(ServicingAcquisitionPage).imports.when_present(10).hover
+      on(ServicingAcquisitionPage).cash.when_present(10).hover
+        on(ServicingAcquisitionPage).FNMAPurchaseAdviceFiles.when_present(10).click
+  sleep(3)
+  on(ServicingAcquisitionPage).TSS.when_present(10).click
+    on(ServicingAcquisitionPage).imports.when_present(10).hover
+      on(ServicingAcquisitionPage).MBS.when_present(10).hover
+        on(ServicingAcquisitionPage).MBSDetailFile.when_present(10).click
+  on(ServicingAcquisitionPage).TSS.when_present(10).click
+    on(ServicingAcquisitionPage).imports.when_present(10).hover
+      on(ServicingAcquisitionPage).MBS.when_present(10).hover
+        on(ServicingAcquisitionPage).MBSSummaryFile.when_present(10).click
+  on(ServicingAcquisitionPage).TSS.when_present(10).click
+    on(ServicingAcquisitionPage).imports.when_present(10).hover
+      on(ServicingAcquisitionPage).blitz.when_present(10).hover
+        on(ServicingAcquisitionPage).loanFileUploaded.when_present(10).click
+  on(ServicingAcquisitionPage).TSS.when_present(10).click
+    on(ServicingAcquisitionPage).imports.when_present(10).hover
+      on(ServicingAcquisitionPage).MERS.when_present(10).hover
+        on(ServicingAcquisitionPage).MERSBatchApprovalDates.when_present(10).click
+  sleep(10)
+  on(ServicingAcquisitionPage).TSS.when_present(10).click
+    on(ServicingAcquisitionPage).imports.when_present(10).hover
+      on(ServicingAcquisitionPage).sellerLoanFiles.when_present(10).click
+  on(ServicingAcquisitionPage).TSS.when_present(10).click
+    on(ServicingAcquisitionPage).imports.when_present(10).hover
+      on(ServicingAcquisitionPage).escrowsReceived.when_present(10).click
+  on(ServicingAcquisitionPage).TSS.when_present(10).click
+    on(ServicingAcquisitionPage).reconciliation.when_present(10).hover
+      on(ServicingAcquisitionPage).pendingLoans.when_present(10).click
+  on(ServicingAcquisitionPage).TSS.when_present(10).click
+    on(ServicingAcquisitionPage).reconciliation.when_present(10).hover
+      on(ServicingAcquisitionPage).validatedLoans.when_present(10).click
+  on(ServicingAcquisitionPage).TSS.when_present(10).click
+    on(ServicingAcquisitionPage).purchaseAdviceReconciliation.when_present(10).click
+  on(ServicingAcquisitionPage).TSS.when_present(10).click
+    on(ServicingAcquisitionPage).boarding.when_present(10).hover
+      on(ServicingAcquisitionPage).selectLoans.when_present(10).click
+  on(ServicingAcquisitionPage).TSS.when_present(10).click
+    on(ServicingAcquisitionPage).boarding.when_present(10).hover
+      on(ServicingAcquisitionPage).boardingFiles.when_present(10).hover
+  on(ServicingAcquisitionPage).TSS.when_present(10).hover
+    on(ServicingAcquisitionPage).reports.when_present(10).hover
+      on(ServicingAcquisitionPage).accountingReports.when_present(10).hover
+        on(ServicingAcquisitionPage).escrowReports.when_present(10).click
+  sleep(5)
+  on(ServicingAcquisitionPage).TSS.when_present(10).click
+    on(ServicingAcquisitionPage).reports.when_present(10).hover
+      on(ServicingAcquisitionPage).accountingReports.when_present(10).hover
+        on(ServicingAcquisitionPage).TSSAccountingReports.when_present(10).click
+  on(ServicingAcquisitionPage).TSS.when_present(10).click
+    on(ServicingAcquisitionPage).reports.when_present(10).hover
+      on(ServicingAcquisitionPage).accountingReports.when_present(10).hover
+        on(ServicingAcquisitionPage).purchaseAdviceReports.when_present(10).click
+  on(ServicingAcquisitionPage).TSS.when_present(10).click
+    on(ServicingAcquisitionPage).reports.when_present(10).hover
+      on(ServicingAcquisitionPage).accountingReports.when_present(10).hover
+        on(ServicingAcquisitionPage).purchaseAdviceReconciliationReports.when_present(10).click
+  on(ServicingAcquisitionPage).TSS.when_present(10).click
+    on(ServicingAcquisitionPage).reports.when_present(10).hover
+      on(ServicingAcquisitionPage).accountingReports.when_present(10).hover
+        on(ServicingAcquisitionPage).capitalizationReport.when_present(10).click
+  on(ServicingAcquisitionPage).TSS.when_present(10).click
+    on(ServicingAcquisitionPage).reports.when_present(10).hover
+      on(ServicingAcquisitionPage).accountingReports.when_present(10).hover
+        on(ServicingAcquisitionPage).boardedEscrowReports.when_present(10).hover
+  on(ServicingAcquisitionPage).TSS.when_present(10).click
+  on(ServicingAcquisitionPage).TSS.when_present(10).click
+    on(ServicingAcquisitionPage).reports.when_present(10).hover
+      on(ServicingAcquisitionPage).secondaryReports.when_present(10).hover
+        on(ServicingAcquisitionPage).activeContractReports.when_present(10).click
+  on(ServicingAcquisitionPage).TSS.when_present(10).click
+    on(ServicingAcquisitionPage).reports.when_present(10).hover
+      on(ServicingAcquisitionPage).secondaryReports.when_present(10).hover
+        on(ServicingAcquisitionPage).boardingReports.when_present(10).click
+  on(ServicingAcquisitionPage).TSS.when_present(10).click
+    on(ServicingAcquisitionPage).reports.when_present(10).hover
+      on(ServicingAcquisitionPage).secondaryReports.when_present(10).hover
+        on(ServicingAcquisitionPage).unfulfilledContracts.when_present(10).click
+  on(ServicingAcquisitionPage).TSS.when_present(10).click
+    on(ServicingAcquisitionPage).reports.when_present(10).hover
+      on(ServicingAcquisitionPage).TSSLoans.when_present(10).hover
+        on(ServicingAcquisitionPage).generalLoanInfo.when_present(10).click
+  on(ServicingAcquisitionPage).TSS.when_present(10).click
+    on(ServicingAcquisitionPage).letters.when_present(10).hover
+      on(ServicingAcquisitionPage).helloLetters.when_present(10).click
+  sleep(3)
+end

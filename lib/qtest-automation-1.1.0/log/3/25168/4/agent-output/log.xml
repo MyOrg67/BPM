@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agentcontrol>
+  <info>
+    <property name="logdir" value="C:\watir_cucumber_template-master\lib\qtest-automation-1.1.0\log\3\25168\4\agent-output" />
+    <property name="logfile" value="log.xml" />
+  </info>
+  <test time="0 minute(s) 0 second(s)" error="exec error">
+    <target name="exec">
+      <task name="ruby">
+        <message priority="error"><![CDATA[Could not execute command: cmd /c ruby -classpath .;C:\watir_cucumber_template-master\lib\qtest-automation-1.1.0\lib\cucumber-plugin-log-collector.jar]]></message>
+      </task>
+    </target>
+  </test>
+</agentcontrol>

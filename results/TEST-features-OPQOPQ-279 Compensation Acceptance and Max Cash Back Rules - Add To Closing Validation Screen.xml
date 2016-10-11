@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="3" errors="0" skipped="0" tests="3" time="0.144015" name="Compensation Acceptance and Max Cash Back Rules - Add To Closing Validation Screen">
+<testcase classname="Compensation Acceptance and Max Cash Back Rules - Add To Closing Validation Screen" name="PreClosing" time="0.040004">
+  <failure message="failed PreClosing" type="failed">
+    <![CDATA[Scenario: PreClosing
+
+Before hook
+
+Message:
+]]>
+    <![CDATA[Error forwarding the new session Empty pool of VM for setup Capabilities [{rotatable=false, nativeEvents=false, loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@9ef39e, browserName=chrome, takesScreenshot=false, javascriptEnabled=true, version=, platform=ANY, cssSelectorsEnabled=true}] (org.openqa.grid.common.exception.GridException) (Selenium::WebDriver::Error::UnknownError)
+[remote server] org.openqa.grid.web.servlet.handler.RequestHandler(RequestHandler.java):115:in `process'
+[remote server] org.openqa.grid.web.servlet.DriverServlet(DriverServlet.java):83:in `process'
+[remote server] org.openqa.grid.web.servlet.DriverServlet(DriverServlet.java):67:in `doPost'
+[remote server] javax.servlet.http.HttpServlet(HttpServlet.java):707:in `service'
+[remote server] javax.servlet.http.HttpServlet(HttpServlet.java):790:in `service'
+[remote server] org.seleniumhq.jetty9.servlet.ServletHolder(ServletHolder.java):808:in `handle'
+[remote server] org.seleniumhq.jetty9.servlet.ServletHandler(ServletHandler.java):587:in `doHandle'
+[remote server] org.seleniumhq.jetty9.server.session.SessionHandler(SessionHandler.java):221:in `doHandle'
+[remote server] org.seleniumhq.jetty9.server.handler.ContextHandler(ContextHandler.java):1127:in `doHandle'
+[remote server] org.seleniumhq.jetty9.servlet.ServletHandler(ServletHandler.java):515:in `doScope'
+[remote server] org.seleniumhq.jetty9.server.session.SessionHandler(SessionHandler.java):185:in `doScope'
+[remote server] org.seleniumhq.jetty9.server.handler.ContextHandler(ContextHandler.java):1061:in `doScope'
+[remote server] org.seleniumhq.jetty9.server.handler.ScopedHandler(ScopedHandler.java):141:in `handle'
+[remote server] org.seleniumhq.jetty9.server.handler.HandlerWrapper(HandlerWrapper.java):97:in `handle'
+[remote server] org.seleniumhq.jetty9.server.Server(Server.java):499:in `handle'
+[remote server] org.seleniumhq.jetty9.server.HttpChannel(HttpChannel.java):310:in `handle'
+[remote server] org.seleniumhq.jetty9.server.HttpConnection(HttpConnection.java):257:in `onFillable'
+[remote server] org.seleniumhq.jetty9.io.AbstractConnection$2(AbstractConnection.java):540:in `run'
+[remote server] org.seleniumhq.jetty9.util.thread.QueuedThreadPool(QueuedThreadPool.java):635:in `runJob'
+[remote server] org.seleniumhq.jetty9.util.thread.QueuedThreadPool$3(QueuedThreadPool.java):555:in `run'
+[remote server] java.lang.Thread():-1:in `run'
+./features/support/hooks.rb:6:in `Before']]>
+  </failure>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Compensation Acceptance and Max Cash Back Rules - Add To Closing Validation Screen" name="Closing" time="0.047005">
+  <failure message="failed Closing" type="failed">
+    <![CDATA[Scenario: Closing
+
+Before hook
+
+Message:
+]]>
+    <![CDATA[Error forwarding the new session Empty pool of VM for setup Capabilities [{rotatable=false, nativeEvents=false, loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@4f4944, browserName=chrome, takesScreenshot=false, javascriptEnabled=true, version=, platform=ANY, cssSelectorsEnabled=true}] (org.openqa.grid.common.exception.GridException) (Selenium::WebDriver::Error::UnknownError)
+[remote server] org.openqa.grid.web.servlet.handler.RequestHandler(RequestHandler.java):115:in `process'
+[remote server] org.openqa.grid.web.servlet.DriverServlet(DriverServlet.java):83:in `process'
+[remote server] org.openqa.grid.web.servlet.DriverServlet(DriverServlet.java):67:in `doPost'
+[remote server] javax.servlet.http.HttpServlet(HttpServlet.java):707:in `service'
+[remote server] javax.servlet.http.HttpServlet(HttpServlet.java):790:in `service'
+[remote server] org.seleniumhq.jetty9.servlet.ServletHolder(ServletHolder.java):808:in `handle'
+[remote server] org.seleniumhq.jetty9.servlet.ServletHandler(ServletHandler.java):587:in `doHandle'
+[remote server] org.seleniumhq.jetty9.server.session.SessionHandler(SessionHandler.java):221:in `doHandle'
+[remote server] org.seleniumhq.jetty9.server.handler.ContextHandler(ContextHandler.java):1127:in `doHandle'
+[remote server] org.seleniumhq.jetty9.servlet.ServletHandler(ServletHandler.java):515:in `doScope'
+[remote server] org.seleniumhq.jetty9.server.session.SessionHandler(SessionHandler.java):185:in `doScope'
+[remote server] org.seleniumhq.jetty9.server.handler.ContextHandler(ContextHandler.java):1061:in `doScope'
+[remote server] org.seleniumhq.jetty9.server.handler.ScopedHandler(ScopedHandler.java):141:in `handle'
+[remote server] org.seleniumhq.jetty9.server.handler.HandlerWrapper(HandlerWrapper.java):97:in `handle'
+[remote server] org.seleniumhq.jetty9.server.Server(Server.java):499:in `handle'
+[remote server] org.seleniumhq.jetty9.server.HttpChannel(HttpChannel.java):310:in `handle'
+[remote server] org.seleniumhq.jetty9.server.HttpConnection(HttpConnection.java):257:in `onFillable'
+[remote server] org.seleniumhq.jetty9.io.AbstractConnection$2(AbstractConnection.java):540:in `run'
+[remote server] org.seleniumhq.jetty9.util.thread.QueuedThreadPool(QueuedThreadPool.java):635:in `runJob'
+[remote server] org.seleniumhq.jetty9.util.thread.QueuedThreadPool$3(QueuedThreadPool.java):555:in `run'
+[remote server] java.lang.Thread():-1:in `run'
+./features/support/hooks.rb:6:in `Before']]>
+  </failure>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Compensation Acceptance and Max Cash Back Rules - Add To Closing Validation Screen" name="Underwriting" time="0.057006">
+  <failure message="failed Underwriting" type="failed">
+    <![CDATA[Scenario: Underwriting
+
+Before hook
+
+Message:
+]]>
+    <![CDATA[Error forwarding the new session Empty pool of VM for setup Capabilities [{rotatable=false, nativeEvents=false, loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@1e52a88, browserName=chrome, takesScreenshot=false, javascriptEnabled=true, version=, platform=ANY, cssSelectorsEnabled=true}] (org.openqa.grid.common.exception.GridException) (Selenium::WebDriver::Error::UnknownError)
+[remote server] org.openqa.grid.web.servlet.handler.RequestHandler(RequestHandler.java):115:in `process'
+[remote server] org.openqa.grid.web.servlet.DriverServlet(DriverServlet.java):83:in `process'
+[remote server] org.openqa.grid.web.servlet.DriverServlet(DriverServlet.java):67:in `doPost'
+[remote server] javax.servlet.http.HttpServlet(HttpServlet.java):707:in `service'
+[remote server] javax.servlet.http.HttpServlet(HttpServlet.java):790:in `service'
+[remote server] org.seleniumhq.jetty9.servlet.ServletHolder(ServletHolder.java):808:in `handle'
+[remote server] org.seleniumhq.jetty9.servlet.ServletHandler(ServletHandler.java):587:in `doHandle'
+[remote server] org.seleniumhq.jetty9.server.session.SessionHandler(SessionHandler.java):221:in `doHandle'
+[remote server] org.seleniumhq.jetty9.server.handler.ContextHandler(ContextHandler.java):1127:in `doHandle'
+[remote server] org.seleniumhq.jetty9.servlet.ServletHandler(ServletHandler.java):515:in `doScope'
+[remote server] org.seleniumhq.jetty9.server.session.SessionHandler(SessionHandler.java):185:in `doScope'
+[remote server] org.seleniumhq.jetty9.server.handler.ContextHandler(ContextHandler.java):1061:in `doScope'
+[remote server] org.seleniumhq.jetty9.server.handler.ScopedHandler(ScopedHandler.java):141:in `handle'
+[remote server] org.seleniumhq.jetty9.server.handler.HandlerWrapper(HandlerWrapper.java):97:in `handle'
+[remote server] org.seleniumhq.jetty9.server.Server(Server.java):499:in `handle'
+[remote server] org.seleniumhq.jetty9.server.HttpChannel(HttpChannel.java):310:in `handle'
+[remote server] org.seleniumhq.jetty9.server.HttpConnection(HttpConnection.java):257:in `onFillable'
+[remote server] org.seleniumhq.jetty9.io.AbstractConnection$2(AbstractConnection.java):540:in `run'
+[remote server] org.seleniumhq.jetty9.util.thread.QueuedThreadPool(QueuedThreadPool.java):635:in `runJob'
+[remote server] org.seleniumhq.jetty9.util.thread.QueuedThreadPool$3(QueuedThreadPool.java):555:in `run'
+[remote server] java.lang.Thread():-1:in `run'
+./features/support/hooks.rb:6:in `Before']]>
+  </failure>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+</testsuite>

@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>lib/pages/compliance.rb</title>
+    <link href="./assets/0.2.3/screen.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="./assets/0.2.3/print.css" media="print" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <script type="text/javascript" src="./assets/0.2.3/rcov.js"></script>
+  </head>
+  <body>
+    <h1>Watir cucumber template-master C0 Coverage Information - Simploco - RCov</h1>
+    <h2>lib/pages/compliance.rb</h2>
+
+    <div class="report_table_wrapper">
+      <table class='report' id='report_table'>
+        <thead>
+          <tr>
+            <th class="left_align">Name</th>
+            <th class="right_align">Total Lines</th>
+            <th class="right_align">Lines of Code</th>
+            <th class="left_align">Total Coverage</th>
+            <th class="left_align">Code Coverage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="left_align"><a href="lib-pages-compliance_rb.html">lib/pages/compliance.rb</a></td>
+            <td class='right_align'><tt>86</tt></td>
+            <td class='right_align'><tt>61</tt></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+      <div class="percent_graph">
+        <div class="covered" style="width:100px"></div>
+        <div class="uncovered" style="width:0px"></div>
+      </div></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+      <div class="percent_graph">
+        <div class="covered" style="width:100px"></div>
+        <div class="uncovered" style="width:0px"></div>
+      </div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Key</h3>
+
+    <div class="key"><pre><span class='marked'>Code reported as executed by Ruby looks like this...</span><span class='marked1'>and this: this line is also marked as covered.</span><span class='inferred'>Lines considered as run by rcov, but not reported by Ruby, look like this,</span><span class='inferred1'>and this: these lines were inferred by rcov (using simple heuristics).</span><span class='uncovered'>Finally, here's a line marked as not executed.</span></pre></div>
+
+    <h3>Coverage Details</h3>
+
+    <table class="details">
+      <tbody>
+        <tr class="marked">
+          <td><pre><a name="line2">2</a> class CompliancePage &lt; GenericBasePage</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line3">3</a>   include DataHelper</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line4">4</a>   include RSpec::Matchers</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line5">5</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line6">6</a>   #class HeaderPage &lt; GenericBasePage</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line7">7</a>   element(:MERS) {|b| b.link(text: &quot;MERS&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line8">8</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line9">9</a>     #Selections within MERS drop down menu</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line10">10</a>     element(:dataImports) {|b| b.link(xpath: &quot;//li[@id=&#39;mers_data_imports_#&#39;]/a&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line11">11</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line12">12</a>       #Selections within Data Imports drop down menu</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line13">13</a>       element(:MERSMonthlyData) {|b| b.link(text: &quot;Mers Monthly Data&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line14">14</a>       element(:DMIMonthlyData) {|b| b.link(text: &quot;DMI Monthly Data&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line15">15</a>       element(:acquiredLoansSource) {|b| b.link(text: &quot;Acquired Loans Source&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line16">16</a>       element(:DMIXrefImports) {|b| b.link(text: &quot;DMI Xref Imports&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line17">17</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line18">18</a>     element(:reconciliation) {|b| b.link(text: &quot;Reconciliation&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line19">19</a>     element(:biennialReviews) {|b| b.link(text: &quot;Biennial Reviews&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line20">20</a>     element(:MERSOrganizations) {|b| b.link(text: &quot;MERS Organizations&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line21">21</a>     element(:exceptionList) {|b| b.link(text: &quot;Exception List&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line22">22</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line23">23</a>   element(:reg0) {|b| b.link(text: &quot;Reg 0&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line24">24</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line25">25</a>     #Selections within Reg 0 drop down menu</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line26">26</a>     element(:reg0Reports) {|b| b.link(text: &quot;Reg 0 Reports&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line27">27</a>     element(:CTExecutives) {|b| b.link(text: &quot;CT Executives&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line28">28</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line29">29</a>   element(:HMDA) {|b| b.link(text: &quot;HMDA&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line30">30</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line31">31</a>     #Selections within HMDA drop down menu</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line32">32</a>     element(:reportableEvents) {|b| b.link(text: &quot;Reportable Events&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line33">33</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line34">34</a>       #Events within Reportable events</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line35">35</a>       element(:reportType) {|b| b.element(text: &quot;Monthly&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line36">36</a>         element(:m) {|b| b.element(text: &quot;Monthly&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line37">37</a>       element(:mPeriod) {|b| b.element(id: &quot;m_period&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line38">38</a>         element(:month) {|b| b.element(text: &quot;October&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line39">39</a>       element(:periodYear) {|b| b.element(xpath: &quot;//div[@id=&#39;main&#39;]/div/div/div/form/select[4]&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line40">40</a>         element(:year) {|b| b.element(text: &quot;2015&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line41">41</a>       element(:submit) {|b| b.element(xpath: &quot;//div[@id=&#39;main&#39;]/div/div/div/form/input&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line42">42</a>       element(:importFromMortgagebot) {|b| b.element(text: &quot;Import from MortgageBot&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line43">43</a>       element(:browse) {|b| b.element(id: &quot;lar_file&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line44">44</a>       element(:open) {|b| b.element(xpath: &quot;//div[@id=&#39;main&#39;]/div/div/div/form/div[2]/div/div/div/input&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line45">45</a>       element(:cancel) {|b| b.element(text: &quot;Cancel&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line46">46</a>       element(:uploadFile) {|b| b.element(text: &quot;Upload File&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line47">47</a>       element(:doTransformations) {|b| b.element(text: &quot;Do Transformations&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line48">48</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line49">49</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line50">50</a>     element(:purchasedLoans) {|b| b.link(text: &quot;Purchased Loans&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line51">51</a>     element(:investorCodes) {|b| b.link(text: &quot;Investor Codes&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line52">52</a>     element(:exceptions) {|b| b.link(text: &quot;Exceptions&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line53">53</a>     element(:exceptionReports) {|b| b.link(text: &quot;Exception Reports&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line54">54</a>     element(:reportFilters) {|b| b.link(text: &quot;Report Filters&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line55">55</a>     element(:quarterlyAnnualProcess) {|b| b.link(text: &quot;Quarterly / Annual Process&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line56">56</a>     element(:dataChangeReport) {|b| b.link(text: &quot;Data Change Report&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line57">57</a>     element(:HPMLLoansReport) {|b| b.link(text: &quot;HPML Loans report&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line58">58</a>     element(:nonReportableLoans) {|b| b.link(text: &quot;Non-reportable loans&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line59">59</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line60">60</a>   element(:lOCert) {|b| b.link(text: &quot;LO Cert&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line61">61</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line62">62</a>     #Selections within LO Cert drop down menu</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line63">63</a>     element(:LOCertInquiries) {|b| b.link(text: &quot;LO Cert Inquiries&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line64">64</a>     element(:LOCertIssues) {|b| b.link(text: &quot;LO Cert Issues&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line65">65</a>     element(:historicLOCertInquiries) {|b| b.link(text: &quot;Historical LO Cert Inquiries&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line66">66</a>     element(:historicalLOCertIssues) {|b| b.link(text: &quot;Historical LO Cert Issues&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line67">67</a>     element(:historicalLOCertDenials) {|b| b.link(text: &quot;Historical LO Cert Denials&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line68">68</a>     element(:noInitialDisclosure2BusinessDays) {|b| b.link(text: &quot;No Initial Disclosure 2 Business Days&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line69">69</a>     element(:noInitialDisclosure3BusinessDays) {|b| b.link(text: &quot;No Initial Disclosure 3 Business Days&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line70">70</a>     element(:historicNoInitialDisclosure2BusinessDays) {|b| b.link(text: &quot;Historic No Initial Disclosure 2 Business Days&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line71">71</a>     element(:historicNoInitialDisclosure3BusinessDays) {|b| b.link(text: &quot;Historic No Initial Disclosure 3 Business Days&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line72">72</a>     element(:preRegBLOCertHistory) {|b| b.link(text: &quot;Pre-RegB LO Cert History&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line73">73</a>     element(:fortyFiveDaysNoIntentToProceed) {|b| b.link(text: &quot;45 Days No Intent to Proceed&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line74">74</a>     element(:preTRIDLOCertHistory) {|b| b.link(text: &quot;Pre-TRID LO Cert History&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line75">75</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line76">76</a>   element(:weeklyRegBReports) {|b| b.link(text: &quot;Weekly Reg B Reports&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line77">77</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line78">78</a>     #Selections within Weekly Reg B Reports drop down menu</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line79">79</a>     element(:noUWStatus) {|b| b.link(text: &quot;No UW Status&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line80">80</a>     element(:UWSubmitted) {|b| b.link(text: &quot;UW Submitted&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line81">81</a>     element(:UWStatus) {|b| b.link(text: &quot;UW Status&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line82">82</a>     element(:counterofferReport) {|b| b.link(text: &quot;Counteroffer Report&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line83">83</a>     element(:historicNoUWStatus) {|b| b.link(text: &quot;Historic No UW Status&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line84">84</a>     element(:historicUWSubmitted) {|b| b.link(text: &quot;Historic UW Submitted&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line85">85</a>     element(:historicUWStatus) {|b| b.link(text: &quot;Historic UW Status&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line86">86</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line87">87</a> end</pre></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Generated on 2016-06-14 17:12:17 -0400 with <a href="https://github.com/fguillen/simplecov-rcov">SimpleCov-RCov 0.2.3</a></p>
+
+  </body>
+</html>

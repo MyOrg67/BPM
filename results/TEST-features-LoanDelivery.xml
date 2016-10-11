@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="1" errors="0" skipped="0" tests="1" time="20.174017" name="Interacting with the element within the Loan Delivery Page">
+<testcase classname="Interacting with the element within the Loan Delivery Page" name="Storing interaction steps within the Loan Delivery" time="20.174017">
+  <failure message="failed Storing interaction steps within the Loan Delivery" type="failed">
+    <![CDATA[Scenario: Storing interaction steps within the Loan Delivery
+
+Given You are in the Loan Delivery page
+
+Message:
+]]>
+    <![CDATA[timed out after 10 seconds, waiting for {:text=>"Menus"} to become present (Watir::Wait::TimeoutError)
+./features/step_definitions/loan_delivery_interaction.rb:4:in `/^You are in the Loan Delivery page$/'
+features/LoanDelivery.feature:3:in `Given You are in the Loan Delivery page']]>
+  </failure>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+</testsuite>

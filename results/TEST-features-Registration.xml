@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="1" errors="0" skipped="0" tests="1" time="0.076007" name="Interacting with the element within the Registration Page">
+<testcase classname="Interacting with the element within the Registration Page" name="Storing interaction steps within the Registration Page" time="0.076007">
+  <failure message="failed Storing interaction steps within the Registration Page" type="failed">
+    <![CDATA[Scenario: Storing interaction steps within the Registration Page
+
+Before hook
+
+Message:
+]]>
+    <![CDATA[Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: VISTA
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'LAP-12166', ip: '172.28.103.76', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_101'
+Driver info: driver.version: FirefoxDriver (org.openqa.selenium.WebDriverException) (Selenium::WebDriver::Error::UnknownError)
+[remote server] org.openqa.selenium.firefox.internal.Executable(Executable.java):72:in `<init>'
+[remote server] org.openqa.selenium.firefox.FirefoxBinary(FirefoxBinary.java):59:in `<init>'
+[remote server] org.openqa.selenium.firefox.FirefoxBinary(FirefoxBinary.java):55:in `<init>'
+[remote server] org.openqa.selenium.firefox.FirefoxDriver(FirefoxDriver.java):178:in `getBinary'
+[remote server] org.openqa.selenium.firefox.FirefoxDriver(FirefoxDriver.java):103:in `<init>'
+[remote server] sun.reflect.GeneratedConstructorAccessor12():-1:in `newInstance'
+[remote server] sun.reflect.DelegatingConstructorAccessorImpl():-1:in `newInstance'
+[remote server] java.lang.reflect.Constructor():-1:in `newInstance'
+[remote server] org.openqa.selenium.remote.server.DefaultDriverProvider(DefaultDriverProvider.java):59:in `callConstructor'
+[remote server] org.openqa.selenium.remote.server.DefaultDriverProvider(DefaultDriverProvider.java):53:in `newInstance'
+[remote server] org.openqa.selenium.remote.server.DefaultDriverFactory(DefaultDriverFactory.java):54:in `newInstance'
+[remote server] org.openqa.selenium.remote.server.DefaultSession$BrowserCreator(DefaultSession.java):214:in `call'
+[remote server] org.openqa.selenium.remote.server.DefaultSession$BrowserCreator(DefaultSession.java):1:in `call'
+[remote server] java.util.concurrent.FutureTask():-1:in `run'
+[remote server] org.openqa.selenium.remote.server.DefaultSession$1(DefaultSession.java):168:in `run'
+[remote server] java.util.concurrent.ThreadPoolExecutor():-1:in `runWorker'
+[remote server] java.util.concurrent.ThreadPoolExecutor$Worker():-1:in `run'
+[remote server] java.lang.Thread():-1:in `run'
+./features/support/hooks.rb:7:in `Before']]>
+  </failure>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+</testsuite>

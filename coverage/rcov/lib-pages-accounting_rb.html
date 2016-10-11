@@ -1,0 +1,350 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>lib/pages/accounting.rb</title>
+    <link href="./assets/0.2.3/screen.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="./assets/0.2.3/print.css" media="print" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <script type="text/javascript" src="./assets/0.2.3/rcov.js"></script>
+  </head>
+  <body>
+    <h1>Watir cucumber template-master C0 Coverage Information - Simploco - RCov</h1>
+    <h2>lib/pages/accounting.rb</h2>
+
+    <div class="report_table_wrapper">
+      <table class='report' id='report_table'>
+        <thead>
+          <tr>
+            <th class="left_align">Name</th>
+            <th class="right_align">Total Lines</th>
+            <th class="right_align">Lines of Code</th>
+            <th class="left_align">Total Coverage</th>
+            <th class="left_align">Code Coverage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="left_align"><a href="lib-pages-accounting_rb.html">lib/pages/accounting.rb</a></td>
+            <td class='right_align'><tt>97</tt></td>
+            <td class='right_align'><tt>52</tt></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>93.81%</tt></div>
+      <div class="percent_graph">
+        <div class="covered" style="width:94px"></div>
+        <div class="uncovered" style="width:6px"></div>
+      </div></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>88.46%</tt></div>
+      <div class="percent_graph">
+        <div class="covered" style="width:88px"></div>
+        <div class="uncovered" style="width:12px"></div>
+      </div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Key</h3>
+
+    <div class="key"><pre><span class='marked'>Code reported as executed by Ruby looks like this...</span><span class='marked1'>and this: this line is also marked as covered.</span><span class='inferred'>Lines considered as run by rcov, but not reported by Ruby, look like this,</span><span class='inferred1'>and this: these lines were inferred by rcov (using simple heuristics).</span><span class='uncovered'>Finally, here's a line marked as not executed.</span></pre></div>
+
+    <h3>Coverage Details</h3>
+
+    <table class="details">
+      <tbody>
+        <tr class="marked">
+          <td><pre><a name="line2">2</a> class AccountingPage &lt; GenericBasePage</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line3">3</a>   include DataHelper</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line4">4</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line5">5</a>   #class HeaderPage &lt; GenericBasePage</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line6">6</a>   element(:scheduledFunding) {|b| b.link(text: &quot;Scheduled Funding&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line7">7</a>   element(:commissions) {|b| b.link(text: &quot;Commissions&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line8">8</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line9">9</a>     #Selections within Commissions drop down menu</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line10">10</a>     element(:reporting) {|b| b.link(xpath: &quot;//li[@id=&#39;commissions_reporting_#&#39;]/a&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line11">11</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line12">12</a>       #Selections within Reporting drop down menu</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line13">13</a>       element(:branchCommissions) {|b| b.link(text: &quot;Branch Commissions&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line14">14</a>       element(:commissionPlanDetails) {|b| b.link(text: &quot;Commission Plan Details&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line15">15</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line16">16</a>     element(:branchCompensations) {|b| b.link(xpath: &quot;//li[@id=&#39;commissions_branch_compensations_#&#39;]/a&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line17">17</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line18">18</a>       #Selecttions within Branch Compensations drop down menu</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line19">19</a>       element(:loans) {|b| b.link(text: &quot;Loans&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line20">20</a>       element(:branches) {|b| b.link(text: &quot;Branches&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line21">21</a>       element(:employees) {|b| b.link(text: &quot;Employees&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line22">22</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line23">23</a>   element(:TSS) {|b| b.link(text: &quot;TSS&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line24">24</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line25">25</a>     #Selections within TSS drop down menu</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line26">26</a>     element(:sellers) {|b| b.link(xpath: &quot;//li[@id=&#39;tss_sellers_#&#39;]/a&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line27">27</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line28">28</a>       #Selections within Sellers drop down menu</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line29">29</a>       element(:contracts) {|b| b.link(text: &quot;Contracts&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line30">30</a>       element(:sellers2) {|b| b.link(text: &quot;Sellers&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line31">31</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line32">32</a>     element(:pricing) {|b| b.link(xpath: &quot;//li[@id=&#39;tss_pricing_#&#39;]/a&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line33">33</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line34">34</a>       #Selections within Pricing drop down menu</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line35">35</a>       element(:pricingGrid) {|b| b.link(text: &quot;Pricing Grid&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line36">36</a>       element(:indices) {|b| b.link(text: &quot;Indices&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line37">37</a>       element(:importPricingGrids) {|b| b.link(text: &quot;Import Pricing Grids&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line38">38</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line39">39</a>     element(:products) {|b| b.link(xpath: &quot;//li[@id=&#39;tss_products_tss_products_path&#39;]/a&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line40">40</a>     element(:imports) {|b| b.link(xpath: &quot;//li[@id=&#39;tss_imports_#&#39;]/a&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line41">41</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line42">42</a>       #Selections within Imports drop down menu</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line43">43</a>       element(:cash) {|b| b.link(xpath: &quot;//li[@id=&#39;imports_cash_#&#39;]/a&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line44">44</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line45">45</a>         #Selections within Cash drop down menu</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line46">46</a>         element(:FNMAWholeLoanFiles) {|b| b.link(text: &quot;FNMA Whole Loan Files&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line47">47</a>         element(:FNMAPurchaseAdviceFiles) {|b| b.link(text: &quot;FNMA Purchase Advice Files&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line48">48</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line49">49</a>       element(:MBS) {|b| b.link(xpath: &quot;//li[@id=&#39;imports_mbs_#&#39;]/a&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line50">50</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line51">51</a>         #Selections within MBS drop down menu</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line52">52</a>         element(:MBSDetailFile) {|b| b.link(text: &quot;MBS Detail File&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line53">53</a>         element(:MBSSummaryFile) {|b| b.link(text: &quot;MBS Summary File&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line54">54</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line55">55</a>       element(:sellerLoanFiles) {|b| b.link(text: &quot;Seller Loan Files&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line56">56</a>       element(:escrowsReceived) {|b| b.link(text: &quot;Escrows Received&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line57">57</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line58">58</a>     element(:purchaseAdviceReconciliation) {|b| b.link(text: &quot;Purchase Advice Reconciliation&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line59">59</a>     element(:reports) {|b| b.link(xpath: &quot;//li[@id=&#39;tss_reports_#&#39;]/a&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line60">60</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line61">61</a>       #Selections within Reports drop down menu</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line62">62</a>       element(:accountingReports) {|b| b.link(xpath: &quot;//li[@id=&#39;reports_accounting_reports_#&#39;]/a&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line63">63</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line64">64</a>         #Selections within Accounting Reports drop down menu</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line65">65</a>         element(:escrowReports) {|b| b.link(text: &quot;Escrow Reports&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line66">66</a>         element(:TSSAccountingReports) {|b| b.link(text: &quot;TSS Accounting Reports&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line67">67</a>         element(:purchaseAdviceReports) {|b| b.link(text: &quot;Purchase Advice Reports&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line68">68</a>         element(:purchaseAdviceReconciliationReports2) {|b| b.link(text: &quot;Purchase Advice Reconciliation Reports&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line69">69</a>         element(:capitalizationReport) {|b| b.link(text: &quot;Capitalization Report&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line70">70</a>         element(:boardedEscrowReports) {|b| b.link(text: &quot;Boarded Escrow Reports&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line71">71</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line72">72</a>       element(:secondaryReports) {|b| b.link(xpath: &quot;//li[@id=&#39;reports_secondary_reports_#&#39;]/a&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line73">73</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line74">74</a>         #Selections within Secondary Reports drop down menu</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line75">75</a>         element(:activeContractReports) {|b| b.link(text: &quot;Active Contract Reports&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line76">76</a>         element(:boardingReports) {|b| b.link(text: &quot;Boarding Reports&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line77">77</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line78">78</a>       element(:TSSLoans) {|b| b.link(xpath: &quot;//li[@id=&#39;reports_tss_loans_#&#39;]/a&quot;)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line79">79</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line80">80</a>         #Selections for TSS Loans drop down menu</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line81">81</a>         element(:generalLoanInfo) {|b| b.link(text: &quot;General Loan Info&quot;)}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line82">82</a>   def back</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line83">83</a>     @browser.back</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line84">84</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line85">85</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line86">86</a>   def hover</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line87">87</a>     assert_exists</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line88">88</a>     assert_has_input_devices_for :hover</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line89">89</a> </pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line90">90</a>     element_call { driver.action.move_to(@element).perform }</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line91">91</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line92">92</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line93">93</a>   def refresh</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line94">94</a>     @browser.navigate.refresh</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line95">95</a>     @after_hooks.run</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line96">96</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line97">97</a> end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line98">98</a> </pre></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Generated on 2016-10-10 10:14:30 -0400 with <a href="https://github.com/fguillen/simplecov-rcov">SimpleCov-RCov 0.2.3</a></p>
+
+  </body>
+</html>

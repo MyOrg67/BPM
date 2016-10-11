@@ -1,0 +1,20 @@
+17:17:08.438 [qTest Automation] Job started: 2016-04-23 17:17:08
+
+17:17:08.438 [qTest Automation] Start to prepare 36 on 6F550324-C33D-4E11-93B8-C6F0CB48842F [C:\watir_cucumber_template-master\lib\qtest-automation-1.1.0]
+17:17:08.438 [qTest Automation] Clean log directory "C:\watir_cucumber_template-master\lib\qtest-automation-1.1.0\log\1\25168\36" since plan is configured to clean log directory
+17:17:08.438 [qTest Automation] Start to test 36 on 6F550324-C33D-4E11-93B8-C6F0CB48842F [C:\watir_cucumber_template-master\lib\qtest-automation-1.1.0]
+17:17:08.438 Current job status: passed.
+
+17:17:08.438 Start to execute task: Native Command.
+17:17:08.448 [qTest Automation] setting environment variable 'cucumber.options' with value '--plugin com.qasymphony.qtest.automation.plugin.cucumber.core.LogCollector'
+17:17:08.448 [qTest Automation] setting environment variable 'HOST_GUID' with value '6F550324-C33D-4E11-93B8-C6F0CB48842F'
+17:17:08.448 [qTest Automation] setting environment variable 'AGENT_SERVER_ID' with value '296'
+17:17:08.448 [qTest Automation] setting environment variable 'JOB_SERVER_ID' with value '3423'
+17:17:08.448 [qTest Automation] setting environment variable 'AGENT_SERVER_URL' with value 'http://localhost:6789/'
+17:17:08.458 [qTest Automation] setting environment variable 'LOG_PATH' with value 'C:\watir_cucumber_template-master\lib\qtest-automation-1.1.0\log\1\25168\36\1461446228438'
+17:17:08.458 [qTest Automation] setting environment variable 'PROJECT_ID' with value '25168'
+17:17:08.458 [qTest Automation] setting environment variable 'JOB_INSTANCE_ID' with value '36'
+17:17:08.518 [qTest Automation] Job completing with status [FAILED] 36 on 6F550324-C33D-4E11-93B8-C6F0CB48842F [C:\watir_cucumber_template-master\lib\qtest-automation-1.1.0]
+17:17:08.528 [qTest Automation] Current job status: failed 
+
+17:17:08.528 [qTest Automation] Job completed 36 on 6F550324-C33D-4E11-93B8-C6F0CB48842F [C:\watir_cucumber_template-master\lib\qtest-automation-1.1.0]

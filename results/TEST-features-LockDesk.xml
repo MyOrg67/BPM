@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="0" errors="0" skipped="0" tests="1" time="40.221021" name="Interacting with the element within the Lock Desk Page">
+<testcase classname="Interacting with the element within the Lock Desk Page" name="Storing interaction steps within the Lock Desk Page" time="40.221021">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+</testsuite>

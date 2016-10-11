@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="1" errors="0" skipped="0" tests="1" time="22.976298" name="Interacting with the element within the PAC Page">
+<testcase classname="Interacting with the element within the PAC Page" name="Storing interaction steps within the PAC Page" time="22.976298">
+  <failure message="failed Storing interaction steps within the PAC Page" type="failed">
+    <![CDATA[Scenario: Storing interaction steps within the PAC Page
+
+Given You are in the PAC page
+
+Message:
+]]>
+    <![CDATA[timed out after 10 seconds, waiting for {:text=>"Menus"} to become present (Watir::Wait::TimeoutError)
+./features/step_definitions/PAC_interaction.rb:4:in `/^You are in the PAC page$/'
+features/PAC.feature:3:in `Given You are in the PAC page']]>
+  </failure>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+</testsuite>

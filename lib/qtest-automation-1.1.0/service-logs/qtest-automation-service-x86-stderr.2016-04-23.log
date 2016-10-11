@@ -1,0 +1,6 @@
+
+2016-04-23 17:19:53 Commons Daemon procrun stderr initialized
+Apr 23, 2016 5:19:54 PM com.qasymphony.qtest.automation.agent.server.util.QAutomationLauncher spawnProcessAndWait
+INFO: Command path [[C:\Program Files (x86)\Java\jdk1.8.0_74\bin\java.exe, -Xms512MM, -Xmx1024MM, -XX:PermSize=128MM, -XX:MaxPermSize=256MM, -Xdebug, -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=9999, -Duser.language=en, -Duser.country=US, -Dagent.config.dir=C:\watir_cucumber_template-master\lib\qtest-automation-1.1.0\config, -Dagent.server.port=6789, -Dagent.server.host=localhost, -Dorg.eclipse.jetty.server.Request.maxFormContentSize=30000000, -DJAVA_SYS_MON_TEMP_DIR=C:\watir_cucumber_template-master\lib\qtest-automation-1.1.0\tmp, -jar, C:\watir_cucumber_template-master\lib\qtest-automation-1.1.0\lib\agent.jar]]
+Apr 23, 2016 5:19:54 PM com.qasymphony.qtest.automation.agent.server.util.QAutomationLauncher spawnProcessAndWait
+SEVERE: Server was terminated with exit code 1. Please see C:\watir_cucumber_template-master\lib\qtest-automation-1.1.0agent-server.log for more details.
