@@ -4,6 +4,8 @@ Given(/^You are in the Accounting page$/) do
   on(LandingPage).menus.when_present(10).click
   on(LandingPage).accounting.when_present(10).click
   sleep(3)
+  
+  #  Adding comments, testing github connections
 end
 
 
