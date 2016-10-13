@@ -6,6 +6,7 @@ Given(/^You are in the Accounting page$/) do
   sleep(3)
   
   #  Adding comments, testing github connections
+  #  Adding comments to branch
 end
 
 
